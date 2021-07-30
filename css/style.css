@@ -257,5 +257,34 @@ h1,h2,h3,h4,h5,h6{
   .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
   }
+  /* ------=======Sections------====== */
+  section{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 140px;
+    bottom: 100%;
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+    z-index: 2;
+  }
+  section.section-show{
+    top: 100px;
+    bottom: auto;
+    opacity: 1;
+    padding-bottom: 45px;
+  }
+  section .container{
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 30px;
+  }
+  @media(max-width: 768px){
+      section{
+          top: 120px;
+      }
+      section.section-show{
+          top: 80px;
+      }
+  }
 
 
