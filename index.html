@@ -51,9 +51,9 @@
         </div>
     </section>
     <!-- Dishes -->
-    <div class="container">
-    <div class="menu">
-        <h2>Our Serve</h2>
+    <!-- <div class="container"> -->
+    <div class="menu" id="dishes">
+        <h2>Grande's Service</h2>
         <div class="row" id="menu">
             <div class="col-md-3" id="menu1">
                 <img id="port" src="./Img/pizza1.jpg" alt="">
@@ -83,8 +83,105 @@
             </div>
         </div>
     </div>
-    </div>
+    <!-- </div> -->
     <!-- end of dishes -->
+    <!-- Order -->
+    <div class="jumbotron">
+        <div class="card">
+            <div class="card-body">
+                <div class="order-up" id="order">
+                    <h3 class="text-center" id="order-please">Order at Grande-Pizzarrie</h3>
+                    <div class="col-md-6">
+                        <div class="pizz">
+                            <div class="form-group">
+                                <form id="pizza">
+                                <label for="pizza">Types available</label>
+                                <select class="custom-select custom-select-md mb-3 flavour" required id="pizza">
+                                    <option value="">Flavours</option>
+                                    <option value="Hawaiian">Hawaiian</option>
+                                    <option value="Cheese">Cheese</option>
+                                    <option value="Meat">Meat</option>
+                                    <option value="Veggie">Veggie</option>
+                                    <option value="Margherita">Margherita</option>
+                                    <option value="BBQ-Chicken">BBQ-Chicken</option>
+                                    <option value="Buffalo">Buffalo</option>
+                                    <option value="Supreme">Supreme</option>
+                                </select>
+                                <label for="size">Size of Pizza;</label>
+                                <select class="form-control" id="size">
+                                    <option value="">Size Matters</option>
+                                    <option value="350">Small: Kshs 350</option>
+                                    <option value="700">Medium: Kshs 700</option>
+                                    <option value="1050">Large: Kshs 1050</option>
+                                    <option value="1400">Extra-Large: Kshs 1400</option>
+                                </select>
+                                <label for="crust">Crust Prefference</label>
+                                <select class="form-control" id="crust">
+                                    <option value="0">No Crust</option>
+                                    <option value="150">Thin Crust@ Kshs 150</option>
+                                    <option value="200">Thick Crust@ Kshs 200</option>
+                                    <option value="250">Flatbread@ Kshs 250</option>
+                                </select>
+                                <label for="topppings">Topping is like a drug to pizza.Choose:</label>
+                                <select class="form-control" id="toppings">
+                                    <option value="0">No toppings</option>
+                                    <option value="120">Pineapple @ Kshs 120</option>
+                                    <option value="100">Onion@ Kshs 100</option>
+                                    <option value="120">Sausage@ Kshs 120</option>
+                                    <option value="100">Spinach@ Kshs 100</option>
+                                    <option value="120">Mushrooms@ Kshs 120</option>
+                                    <option value="120">Peperoni@ Kshs 120</option>
+                                    <option value="120">Extra Cheese@ Kshs 120</option>
+                                    <option value="100">Bacon@ Kshs 100</option>
+                                    <option value="100">Black-Olives@ Kshs 100</option>
+                                </select>
+                                <label for="number">Number of Pizza's</label>
+                                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                                <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+                                <button type="button" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="pizz" id="rightCol"></div>
+                        </div>
+                        <div class="data" id="all">
+                            <h5 class="orderTitle">Order Served:</h5>
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="pitza" id="displayWell">
+                                <h5 class="orderTitle">Cost amounts To:</h5>
+                                    <ul>
+                                    </ul>
+                            </div>
+                            <div class="d-block mx-auto text-center">
+                                <button class='deliver'>Make Delivery</button>
+                                <button class='delivernot'>Pick Up</button>
+                            </div>
+                            <div class="cdata-overlay">
+                                    <div class="col-sm-3"></div>
+                                    <form action="" class="form-group col-sm-6 data" id="location">
+                                        <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                                        <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                                        <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                                        <button type="submit" class="btn btn-success" id="detailsButton">Submit</button>
+                                    </form>
+                                    <div class="col-sm-3"></div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Oeder Section -->
+    <footer>
 
+    </footer>
+
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
