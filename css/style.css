@@ -96,3 +96,25 @@ h1,h2,h3,h4,h5,h6{
     }
 }
  /* ------======Navigation Menu-----====== */
+ .nav-menu{
+    margin-top: -450px;
+    margin-left: 57%;
+}
+.nav-menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu li + li{
+    margin-left: 30px;
+}
+.nav-menu a{
+    display: block;
+    position: relative;
+    color: rgba(255,255 , 255, 0.7);
+    font-size: 16px;
+    font-family: 'STIX Two Math', serif;
+    font-weight: 400;
+}
+/* -----=====before----===== */
