@@ -39,3 +39,45 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'MonteCarlo', cursive;
 }
 /* ------======Header-------====== */
+#header{
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 997;
+    overflow-y: auto;
+}
+#header *{
+    transition: ease-in-out 0.3s;
+}
+#header h1{
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-family: 'MonteCarlo', cursive;
+}
+#header h1 a,
+#header h1 a:hover{
+    color: #fff;
+    line-height: 1;
+    display: inline-block;
+}
+#header h2{
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgba(255,255 , 255, 0.8);
+}
+#header h2 span{
+    color: #fff;
+    border-bottom: 2px solid #18d26e;
+    padding-bottom: 6px;
+}
+#header h2 span:hover{
+    color: #fff;
+    border-bottom: 2px solid #ff28f4;
+    padding-bottom: 6px;
+}
+
