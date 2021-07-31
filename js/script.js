@@ -1,11 +1,4 @@
-$(document).ready(function(){
-    $ (function(){
-        $("#pizza"). change(function(){
-            let pizzaFlavour = $("#pizza option:selected").text();
-            $(".data ul").append("<li>" + "PIZZA FLAVOUR:  "+  pizzaFlavour  + "</li>");
-        })
-})
-function Pizza(size, crust, toppings, number){
+function Pizza(size,crust,toppings,number){
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
@@ -17,13 +10,13 @@ Pizza.prototype.price = function(){
     return total;
 }
 
-// $(document).ready(function(){
-//     $ (function(){
-//         $("#pizza"). change(function(){
-//             let pizzaFlavour = $("#pizza option:selected").text();
-//             $(".data ul").append("<li>" + "PIZZA FLAVOUR:  "+  pizzaFlavour  + "</li>");
-//         })
-// })
+$(document).ready(function(){
+    $ (function(){
+        $("#pizza"). change(function(){
+            let pizzaFlavour = $("#pizza option:selected").text();
+            $(".data ul").append("<li>" + "PIZZA FLAVOUR:  "+  pizzaFlavour  + "</li>");
+        })
+})
 $(function(){
     $("#size"). change(function(){
       let pizzaSize = $("#size option:selected").text();
