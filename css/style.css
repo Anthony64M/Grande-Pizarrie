@@ -345,9 +345,11 @@ button{
     font-size: 1rem;
 }
 /* -----====Footer-----===== */
-.footer{
+footer{
     background-color: #403e3e;
     opacity: 0.9;
+    /* margin-top: 1rem; */
+    padding-bottom: 1rem;
 }
 .address{
     font-family: 'Abril Fatface', cursive;
