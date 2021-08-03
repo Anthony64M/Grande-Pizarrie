@@ -319,7 +319,7 @@ a:hover{
 }
 .card-body{
     background-image: url("../Img/delivery.jpg");
-    opacity: 0.9;
+    /* opacity: 0.9; */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #403e3e;
@@ -327,27 +327,13 @@ a:hover{
     height: 100%;
     font-family: 'STIX Two Math', serif;
 }
-.pizz .data{
-    color: white;
-    font-size: 0.8em;
-    font-family: inherit;
-}
 button{
     margin: 10px;
-}
-.cdata-overlay form{
-    display: none;
-    margin-left: 0px;
-}
-.cdata-overlay input{
-    height: 20%;
-    width: 150%;
-    font-size: 1rem;
 }
 /* -----====Footer-----===== */
 footer{
     background-color: #403e3e;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     /* margin-top: 1rem; */
     padding-bottom: 1rem;
 }
@@ -362,7 +348,7 @@ footer{
     text-align: center;
 }
 .contact_icon ul{
-    text-decoration: none;
+    list-style: none;
 }
 footer img:hover{
     animation: wobble 3s infinite;
