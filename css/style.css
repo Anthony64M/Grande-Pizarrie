@@ -318,7 +318,7 @@ a:hover{
     height: 100%;
 }
 .card-body{
-    background-image: url("./Img/markus-spiske-ZwZ57YKFJLk-unsplash.jpg");
+    background-image: url("../Img/markus-spiske-ZwZ57YKFJLk-unsplash.jpg");
     /* opacity: 0.9; */
     background-size: cover;
     background-repeat: no-repeat;
